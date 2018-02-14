@@ -1,2 +1,2 @@
-# coolcaliente.github.io
-Andreina Keller's Portfolio
+# Responsive-Portfolio
+Part B of HW assignment 2

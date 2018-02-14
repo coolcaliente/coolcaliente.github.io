@@ -95,6 +95,10 @@ hr {
     display: inline;
 }
 
+#contact img {
+    width: 65px;
+}
+
 footer {
     background-color: #666666;
     color: #dddddd;
@@ -214,4 +218,157 @@ input[type=submit]:hover {
 
 .socialMediaPadding {
     padding: 0 7px;
+}
+
+
+/* Media Queries Styles */
+
+@media only screen and (max-width: 960px) {
+
+    .container {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    #aboutContent {
+        width: 350px;
+    }
+    
+    #contactContent {
+        width: 350px;
+
+    }
+
+    #contact {
+        width: 210px;
+    }
+
+    #portfolioContent {
+        width: 350px;
+    }
+
+    .rightPadding {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    #contact img {
+        width: 60px;
+    }
+
+    .entryContainer {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #portfolioContent img {
+        width: 100%;
+    }
+
+    .conteredText {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    #aboutContent {
+        width: 650px;
+    }
+
+    .rightPadding {
+        padding-right: 0px;
+        width: 250px;
+    }
+
+    #contact {
+        width: 650px;
+        margin: 30px 0 120px;
+    }
+
+    #contactContent {
+        width: 650px;
+
+    }
+
+    #portfolioContent {
+        width: 650px;
+        margin: 0;
+    }
+
+    .entryContainer {
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    .container {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    #aboutContent {
+        width: 550px;
+    }
+
+    #contactContent {
+        width: 550px;
+
+    }
+
+    #contact {
+        width: 550px;
+    }
+
+    #portfolioContent {
+        width: 550px;
+    }
+
+    .rightPadding {
+        padding-right: 0px;
+        width: 100%;
+    }
+
+    .left {
+        float: none;
+    }
+
+    .right {
+        float: none;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .entryContainer {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #portfolioContent img {
+        width: 100%;
+    }
+
+    nav li {
+        padding: 0 50px;
+    }
+
+    .greyPipe {
+        padding: 0 50px;
+    }
+
+
+
+
+
+
 }
