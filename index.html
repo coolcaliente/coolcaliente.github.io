@@ -1,103 +1,190 @@
-<!-- This is Andreina Keller's first bootcamp homework assignment and this is a really cool comment! -->
-
-<!DOCTYPE html>
-
-<html lang="en-us">
-
-<!-- Start Header -->
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+
+
+    <title>Andreina's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sintony|Source+Sans+Pro:600i,900" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <title>Andreina's Portfoilo Website</title>
 </head>
 
-<!-- End Header -->
-
-<!-- Start Body -->
-
 <body>
-    <!-- Start Header-->
-    <header>
-        <div class="container clearfix">
+    <div class="container mt-5 bg-white">
 
-            <!-- Start Header Logo -->
-            <h1 class="left">Andreina Keller</h1>
-            <!-- End Header Logo -->
-
-            <!-- Start Naviagation -->
-            <nav class="right">
-                <ul>
-                    <li>
-                        <a href="./index.html">About</a>
-                    </li>
-                    <li class="greyPipe">
-                        <a href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- End Naviagation -->
-        </div>
-    </header>
-    <!-- End Header-->
-
-    <div id="container" class=" container clearfix">
-
-        <!-- Start About Me Area-->
-        <section id="aboutContent">
-            <h2>About Me</h2>
-            <hr>
-            <p class="left">
-                <img class="left rightPadding" src="./assets/images/cuddlemonster.jpg" alt="Andreina's self portrait illustration" width="200"
-                /> Hello! I am a full-time graphic designer, part-time developer bootcamp student, and all time lover of all
-                things cheesy.
-                <br>
-                <br> I was born and raised in Texas but grew up most during a 6.5 year layover in Hawaii. You could say I'm a
-                lonestar lady with an aloha state of mind!
-            </p>
-
-        </section>
-        <!-- End About Me Area -->
-
-        <!-- Start Contact Area -->
-
-        <aside id="contact">
-            <h3>Connect with Me</h3>
-            <hr>
-            <ul>
-                <li>
+        <div class="row justify-content-sm-center mb-5">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="./assets/images/aklogo-01.svg">
+            </div>
+            <div class="col-sm-12 col-lg-7 pt-5">
+                <div class="row justify-content-end mb-4 pr-md-5 pr-lg-0">
+                    <a href="https://www.linkedin.com/in/andreina-keller/" target="_blank">
+                        <img src="./assets/images/linkedin.svg" class="social mr-4">
+                    </a>
                     <a href="https://github.com/coolcaliente" target="_blank">
-                        <img src="./assets/images/github-logo.png" alt="GitHub Logo" />
+                        <img src="./assets/images/github.svg" class="social-alt mr-4">
                     </a>
-                </li>
-                <li class="socialMediaPadding">
-                    <a href="https://www.linkedin.com/in/andreina-keller-443295b0/" target="_blank">
-                        <img src="./assets/images/linkedin-logo.png" alt="LinkedIn Logo" />
+                    <a href="https://www.instagram.com/coolcaliente/" target="_blank">
+                        <img src="./assets/images/instagram.svg" class="social mr-3">
                     </a>
-                </li>
-                <li>
-                    <a href="https://stackoverflow.com/users/9156521/coolcaliente" target="_blank">
-                        <img src="./assets/images/stackoverflow-logo.png" alt="Stackoverflow Logo" />
-                    </a>
-                </li>
-            </ul>
-        </aside>
-        <!-- End Contact Area -->
+                </div>
+                <div class="col pl-5 mt-5">
+                    <h2 class="pt-sm-3 pb-2">Have a looksie</h2>
+                    <p>My name is Andreina Keller. I am a graphic designer, front-end developer, and UI designer living in Houston
+                        Texas. I believe informed design decisions and cheese are the answers to most dilemmas. </p>
+                </div>
+
+                <div class="col my-4 pl-5 pt-4" id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> All</button>
+                    <button class="btn" onclick="filterSelection('web')"> Web Development</button>
+                    <button class="btn" onclick="filterSelection('print')"> Print</button>
+                    <button class="btn" onclick="filterSelection('logos')"> Logos</button>
+                </div>
+
+                <!-- <div class="row justify-content-end pt-4">
+
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- <div class="row d-flex justify-content-end">
+            <div class="col-sm-8 ">
+                <h2 class="pt-sm-3">Portfolio of Andreina Keller</h2>
+                <p>I am a graphic designer, front-end developer, and UI designer living in Houston Texas. I believe in clean,
+                    concise, informed design decisions and that cheese is the answer to most dilemmas. </p>
+            </div>
+        </div> -->
+
+        <!-- <div class="row my-4" id="myBtnContainer">
+            <div class="col d-flex justify-content-end">
+                <button class="btn active" onclick="filterSelection('all')"> All</button>
+                <button class="btn" onclick="filterSelection('web')"> Web Development</button>
+                <button class="btn" onclick="filterSelection('print')"> Print</button>
+                <button class="btn" onclick="filterSelection('logos')"> Logos</button>
+            </div>
+        </div> -->
+
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+
+            <div class="col-sm-12 col-md-6 col-lg-4 work web mb-5">
+                <img src="./assets/images/ar-mockup.jpg" alt="arrested development mockup" class="img-fluid" style="width:100%; height: auto;">
+                <div class="overlay">
+                    <div class="text">Arrested Development Memory Game
+                        <div class="pt-4">
+                            <a href="https://github.com/coolcaliente/clicky/" target="_blank">
+                                <img src="./assets/images/github.svg" class="portfolioLink mr-4">
+                            </a>
+                            <a a href="https://coolcaliente.github.io/clicky//" target="_blank">
+                                <img src="./assets/images/link-symbol.svg" class="portfolioLink mr-4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 work web mb-5">
+                <img src="./assets/images/hike-mockup.jpg" alt="Take a hike mockup" class="img-fluid" style="width:100%; height: auto;">
+                <div class="overlay">
+                    <div class="text">Take-A-Hike App
+                        <div class="pt-4">
+                            <a href="https://github.com/coolcaliente/take-a-hike" target="_blank">
+                                <img src="./assets/images/github.svg" class="portfolioLink mr-4">
+                            </a>
+                            <a a href="https://grantposell.github.io/waag/index.html" target="_blank">
+                                <img src="./assets/images/link-symbol.svg" class="portfolioLink mr-4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 work web mb-5">
+                <img src="./assets/images/ff-mockup.jpg" alt="Mountains" class="img-fluid" style="width:100%; height: auto;">
+                <div class="overlay">
+                    <div class="text">Friend Finder
+                        <div class="pt-4">
+                            <a href="https://github.com/coolcaliente/FriendFinder" target="_blank">
+                                <img src="./assets/images/github.svg" class="portfolioLink mr-4">
+                            </a>
+                            <a a href="https://mighty-meadow-48808.herokuapp.com/" target="_blank">
+                                <img src="./assets/images/link-symbol.svg" class="portfolioLink mr-4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 work web mb-5">
+                <img src="./assets/images/plantos-mockup.jpg" alt="Mountains" class="img-fluid" style="width:100%; height: auto;">
+                <div class="overlay">
+                    <div class="text">Plantos
+                        <div class="pt-4">
+                            <a href="https://github.com/coolcaliente/plantos-plant-watering" target="_blank">
+                                <img src="./assets/images/github.svg" class="portfolioLink mr-4">
+                            </a>
+                            <a a href="https://young-wildwood-52427.herokuapp.com/" target="_blank">
+                                <img src="./assets/images/link-symbol.svg" class="portfolioLink mr-4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- <div class="col-sm-4 work print">
+            <div class="content hoverEffect">
+                <img src="http://via.placeholder.com/300x300" alt="Lights" style="width:100%">
+                <h4>PRINT</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="col-sm-4 work logos">
+            <div class="content">
+                <img src="http://via.placeholder.com/300x300" alt="Nature" style="width:100%">
+                <h4>LOGOS</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div> -->
+
+
+        <!-- END GRID -->
     </div>
 
-    <!-- Start Footer Area -->
-    <footer>
-        <p>&copy; Copyright 2018 Andreina Keller</p>
-    </footer>
+    </div>
 
-    <!-- End Footer Area -->
-
-    <!-- End Body -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="./javascript/logic.js">
+    </script>
 </body>
 
 </html>

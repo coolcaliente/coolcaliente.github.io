@@ -1,374 +1,137 @@
-/* Base Styles */
+/* .purple {
+    background-color: purple;
+    ./css/instagram.svg
+} */
 
 body {
-    color:  #777777;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-    background-color: #e7e7e7;
-    background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23fdfdfd' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Georgia', Georgia, Times, Times New Roman, serif;
-    color: #4aaaa5;
-    font-weight: bold;
-    font-size: 1.75em;
-}
-
-h1 {
-    background-color:#4aaaa5;
-    color: #fff;
-    padding: 30px 25px;
-}
-
-h3 {
-    font-size: 1.25em;
-}
-
-h4 {
-    font-size: 1.2em;
-    font-weight: lighter;
-    color:#fff;
-}
-
-hr {
-    border-width: 1.5px;
-    border-style: solid;
-    margin: 10px 0 30px;
-    border-color: #e7e7e7;
-}
-
-/* Layout Styles */
-
-#container {
-    padding-top: 30px;
-    padding-bottom: 150px;
-
+    background: #F2F2F2;
+    font-family: 'Sintony', sans-serif;
+    font-size: .85rem;
+    line-height: 1.5rem;
+    background-image: radial-gradient(#ced6ed 10%, transparent 0);
+    background-size: 1em 1em;
+    background-position: -.33em -.33em;
+    height: 25vh;
+    
 }
 
 
-#aboutContent {
-    background-color: white;
-    width: 600px;
-    float: left;
-    padding: 25px;
-    border: 1px solid #dddddd;
-    line-height: 1.6;
+.social {
+    width: 20px;
+
 }
 
-#contactContent {
-    background-color: white;
-    width: 600px;
-    float: left;
-    padding: 25px;
-    border: 1px solid #dddddd;
-    line-height: 1.6;
+.social-alt {
+    width: 25px;
+
 }
 
-#portfolioContent {
-    background-color: white;
-    width: 600px;
-    float: left;
-    padding: 25px;
-    border: 1px solid #dddddd;
-    line-height: 1.6;
-    margin-bottom: 150px;
+.nav-link {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: #FFBB00;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: .15rem;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
 }
 
 
-#contact {
-    background-color: white;
-    width: 220px;
-    float: left;
-    height: auto;
-    margin-left: 30px;
-    padding: 25px;
-    border: 1px solid #dddddd;
+
+/* Add padding BETWEEN each column (if you want) */
+/* .row,
+.row > .work {
+    padding: 8px;
+} */
+
+/* Create three equal columns that floats next to each other */
+.work {
+    display: none; /* Hide columns by default */
 }
 
-#contact ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#contact li {
-    display: inline;
-}
-
-#contact img {
-    width: 65px;
-}
-
-footer {
-    background-color: #666666;
-    color: #dddddd;
-    text-align: center;
-    font-size: .75em;
+/* Clear floats after rows */ 
+/* .row:after {
+    content: "";
+    display: table;
     clear: both;
-    padding: 50px 0 30px;
-    border-top: 7px solid #4aaaa5;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+} */
 
-header {
-    background-color: #ffffff;
-    border-bottom: 2px solid #cccccc;
-    clear:both;
-    top: 0;
-    width: 100%;
-}
-
-
-nav {
+/* Content */
+/* .content {
     background-color: white;
-    padding: 35px 0;
+    padding: 10px;
+} */
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: .9rem;
 }
 
-nav li {
-    display: inline;
-    padding: 0 10px;
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
 }
 
-nav li a {
-    text-decoration: none;
-    color: grey;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-}
-
-input[type=submit] {
-    font-size: 16px;
-    background-color: #4aaaa5;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #4aaaa5;
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #FFC933;
+   color: white;
 }
 
 
+/* .content {
+    width: 100%
+} */
 
-/* Class Styles */
-
-.conteredText {
+.overlay {
     position: absolute;
-    top: 75%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FFC933;
+
+  }
+
+  .work:hover .overlay {
+    opacity: .90;
+
+  }
+
+  .text {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #4aaaa5;
-    color: #fff;
-    width: 280px;
-    padding: 10px 0;
-}
+    -ms-transform: translate(-50%, -50%);
+    text-align: left;
+    line-height: 1.75rem;
+  }
 
-.entryContainer {
-    position: relative;
-    text-align: center;
-    margin-bottom: 40px;
-}
+  .portfolioLink {
+    width: 35px;
 
-.container {
-    width: 960px;
-    margin: 0 auto;
-}
-
-.clearfix {
-    overflow: auto;
-}
-
-.greyPipe {
-    border-right: 1px solid #dddddd;
-    border-left: 1px solid #dddddd;
-    padding: 0 15px;
-}
-
-.left {
-    float: left;
-}
-
-.leftPortfolio {
-    margin-right: 40px;
-}
-
-.right {
-    float: right;
-}
-
-.rightPadding {
-    padding-right: 20px;
-}
-
-.socialMediaPadding {
-    padding: 0 7px;
-}
-
-
-/* Media Queries Styles */
-
-@media only screen and (max-width: 960px) {
-
-    .container {
-        width: 700px;
-        margin: 0 auto;
-    }
-
-    #aboutContent {
-        width: 350px;
-    }
-    
-    #contactContent {
-        width: 350px;
-
-    }
-
-    #contact {
-        width: 210px;
-    }
-
-    #portfolioContent {
-        width: 350px;
-    }
-
-    .rightPadding {
-        padding-right: 0px;
-        width: 100%;
-    }
-
-    #contact img {
-        width: 60px;
-    }
-
-    .entryContainer {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    #portfolioContent img {
-        width: 100%;
-    }
-
-    .conteredText {
-        width: 100%;
-    }
-
-}
-
-@media only screen and (max-width: 768px) {
-
-    #aboutContent {
-        width: 650px;
-    }
-
-    .rightPadding {
-        padding-right: 0px;
-        width: 250px;
-    }
-
-    #contact {
-        width: 650px;
-        margin: 30px 0 120px;
-    }
-
-    #contactContent {
-        width: 650px;
-
-    }
-
-    #portfolioContent {
-        width: 650px;
-        margin: 0;
-    }
-
-    .entryContainer {
-        margin-bottom: 20px;
-        width: 300px;
-    }
-
-}
-
-@media only screen and (max-width: 640px) {
-
-    .container {
-        width: 600px;
-        margin: 0 auto;
-    }
-
-    #aboutContent {
-        width: 550px;
-    }
-
-    #contactContent {
-        width: 550px;
-
-    }
-
-    #contact {
-        width: 550px;
-    }
-
-    #portfolioContent {
-        width: 550px;
-    }
-
-    .rightPadding {
-        padding-right: 0px;
-        width: 100%;
-    }
-
-    .left {
-        float: none;
-    }
-
-    .right {
-        float: none;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    nav {
-        text-align: center;
-    }
-
-    .entryContainer {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    #portfolioContent img {
-        width: 100%;
-    }
-
-    nav li {
-        padding: 0 50px;
-    }
-
-    .greyPipe {
-        padding: 0 50px;
-    }
-
-
-
-
-
-
-}
+  }
